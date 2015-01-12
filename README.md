@@ -15,7 +15,7 @@ First of all install by using composer. Add this code to your composer.json:
 
 ```javascript
 "require": {
-    "erogami/flashmessages": "dev-master"
+    "erogami/cfmessage": "dev-master"
 },
 ```
 
