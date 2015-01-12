@@ -1,7 +1,7 @@
 Cfmessage
 =========
 
-Flash messages, a class to shot sucess, info, warning and error messages for the user.
+Flash messages, a class to show sucess, info, warning and error messages for the user.
 
 By Alex Chau, alex_chau6@hotmail.com
 
@@ -25,7 +25,7 @@ Add this code to your front-controller.
 
 ```php
 $di->set('Cfmessage', function() use ($di) { 
-    $message = new \Erogami\Cfmessage\Cfmessage($di);  
+    $message = new \erogami\Cfmessage\Cfmessage($di);  
     return $message; 
 }); 
 ```
