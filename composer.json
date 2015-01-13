@@ -1,15 +1,12 @@
 {
     "name": "erogami/cfmessage",    
     "type": "library",
-    "description": "Class to show flash messages",
-    "keywords": ["flash", "message", "info", "warning", "note"],
-    "homepage": "http://dbwebb.se",
+    "description": "Class for flash messages",
+    "keywords": ["message", "flash", "notice", "info"],
     "license": "MIT",
     "authors": [
         {
             "name": "Alexander Chau",
-            "email": "alex_chau6@hotmail.com",
-            "homepage": "http://dbwebb.se",
             "role": "Developer"
         }
     ],
@@ -17,6 +14,6 @@
         "php": ">=5.4"
     },
     "autoload": {
-        "psr-4": { "erogami\\": "src/" }
-        }
+        "psr-4": { "Erogami\\": "src/" }
+    }
 }
