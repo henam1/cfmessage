@@ -1,15 +1,15 @@
 {
-    "name": "anax/mvc",    
+    "name": "erogami/cfmessage",    
     "type": "library",
-    "description": "Webtemplate to create websites",
-    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "description": "Class to show flash messages",
+    "keywords": ["flash", "message", "info", "warning", "note"],
     "homepage": "http://dbwebb.se",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mikael Roos",
-            "email": "me@mikaelroos.se",
-            "homepage": "http://mikaelroos.se",
+            "name": "Alexander Chau",
+            "email": "álex_chau6@hotmail.com",
+            "homepage": "http://dbwebb.se",
             "role": "Developer"
         }
     ],
@@ -17,7 +17,6 @@
         "php": ">=5.4",
         "erogami/cfmessage": "dev-master"
     },
-    "require-dev": {
-        "satooshi/php-coveralls": "dev-master"
-    }
+    "autoload": {
+        "psr-4": { "erogami\\": "src/" }
 }
