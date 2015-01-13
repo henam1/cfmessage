@@ -19,4 +19,5 @@
     },
     "autoload": {
         "psr-4": { "erogami\\": "src/" }
+        }
 }
