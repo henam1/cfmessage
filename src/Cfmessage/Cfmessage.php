@@ -9,8 +9,6 @@ namespace Erogami\Cfmessage;
 
 class Cfmessage{
     
-    
-    
     public $sessionKey=null;
     
 	public function __construct(){
