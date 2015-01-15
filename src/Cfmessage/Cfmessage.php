@@ -8,6 +8,14 @@ namespace Erogami\Cfmessage;
  */
 
 class Cfmessage{
+    
+    
+    
+    public $sessionKey=null;
+    
+	public function __construct(){
+		$this->sessionKey = 'Cfmessages';
+	}
 
     
     /** 
@@ -19,9 +27,9 @@ class Cfmessage{
      * @return void 
      */ 
     public function addMessage($type, $content) {
-        if(!($this->session->get('Cfmessage', [])) == null)
+        if(!($this->session->get($this->sessionKey))
         {
-            $messages = $this->session->get('Cfmessage', []);
+            $messages = $this->session->get($this->sessionKey);
         }
         
         $messages[] = [
@@ -29,7 +37,7 @@ class Cfmessage{
             'type' => $type,
         ];
         
-        $this->session->set('Cfmessage', $messages);
+        $_SESSION[$this->sessionKey] = $messages;
     }
     
    
@@ -88,7 +96,7 @@ class Cfmessage{
      * @return $html. 
      */
     public function printMessage() {
-        $messages = $this->session->get('Cfmessage', []);
+        $messages = $this->session->get($this->sessionKey);
         $html = '';
         
         foreach ($messages as $message){
@@ -107,7 +115,7 @@ class Cfmessage{
      * @return void 
      */
     public function clearSession() {
-        $this->session->set('Cfmessage', NULL);
+        $_SESSION[$this->sessionKey] = NULL;
     } 
     
     
