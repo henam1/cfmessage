@@ -1,6 +1,6 @@
 <?php
 
-namespace Erogami\Cfmessage;
+namespace erogami\cfmessage;
 
 /**
  * Class for flashing messages.

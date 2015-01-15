@@ -1,9 +1,8 @@
 <?php
 
-namespace Erogami\Cfmessage;
+namespace erogami\cfmessage;
 
-class CfmessageTest extends \PHPUnit_Framework_TestCase
-{
+class CfmessageTest extends \PHPUnit_Framework_TestCase{
     
     public function testAddMessage(){
     
