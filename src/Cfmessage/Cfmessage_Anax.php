@@ -8,6 +8,17 @@ namespace Erogami\Cfmessage;
  */
 
 class Cfmessage{
+    
+use \Anax\DI\TInjectable;
+    
+    /**
+    * Constructor sets di.
+    *
+    */
+     public function __construct($di){
+         $this->di = $di; 
+     }
+    
 
     
     /** 
