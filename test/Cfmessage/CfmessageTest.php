@@ -1,6 +1,7 @@
 <?php
 
-namespace erogami\cfmessage;
+namespace Erogami\Cfmessage;
+require_once(__DIR__ . '/../../src/Cfmessage/Cfmessage.php');
 
 class CfmessageTest extends \PHPUnit_Framework_TestCase{
     
