@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/henam1/cfmessage.svg?branch=master)](https://travis-ci.org/henam1/cfmessage)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/henam1/cfmessage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/henam1/cfmessage/?branch=master)]
+[![Code Coverage](https://scrutinizer-ci.com/g/henam1/cfmessage/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/henam1/cfmessage/?branch=master)
+
 Cfmessage
 =========
 
