@@ -27,10 +27,10 @@ class Cfmessage{
      * @return void 
      */ 
     public function addMessage($type, $content) {
-        if(!($this->session->get($this->sessionKey)))
-        {
-            $messages = $this->session->get($this->sessionKey);
-        }
+        if (isset($_SESSION[$this->sessionKey]))
+		{
+			$messages = $_SESSION[$this->sessionKey];
+		}
         
         $messages[] = [
             'content' => $content,
@@ -96,7 +96,7 @@ class Cfmessage{
      * @return $html. 
      */
     public function printMessage() {
-        $messages = $this->session->get($this->sessionKey);
+        $messages = $_SESSION[$this->sessionKey];
         $html = '';
         
         foreach ($messages as $message){
