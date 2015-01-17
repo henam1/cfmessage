@@ -38,7 +38,7 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase{
      public function testAddWarning(){
     
         $test = new Cfmessage();
-        $test->addError('test');
+        $test->addWarning('test');
         $exp = '<div id="message" class="warning"><p><i class="fa fa-warning"></i> test</p></div>';
 	    $res = $test->printMessage();
         $this->assertEquals($res, $exp, "Message not matching");
@@ -47,7 +47,7 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase{
     public function testAddSuccess(){
     
         $test = new Cfmessage();
-        $test->addError('test');
+        $test->addSuccess('test');
         $exp = '<div id="message" class="success"><p><i class="fa fa-check"></i> test</p></div>';
 	    $res = $test->printMessage();
         $this->assertEquals($res, $exp, "Message not matching");
@@ -56,7 +56,7 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase{
     public function testAddInfo(){
     
         $test = new Cfmessage();
-        $test->addError('test');
+        $test->addInfo('test');
         $exp = '<div id="message" class="info"><p><i class="fa fa-info"></i> test</p></div>';
 	    $res = $test->printMessage();
         $this->assertEquals($res, $exp, "Message not matching");
