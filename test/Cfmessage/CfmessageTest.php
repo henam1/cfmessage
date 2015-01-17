@@ -67,7 +67,7 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase{
 		$test = new Cfmessage();
 		$_SESSION['Cfmessage'] = 'test';
 		$test->clearSession();
-		$this->assertNull($_SESSION['Cfessage'], 'SESSION was not cleared');
+		$this->assertNull($_SESSION['Cfmessage'], 'SESSION was not cleared');
     }
     
 
