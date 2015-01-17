@@ -14,7 +14,7 @@ class Cfmessage{
     public $sessionKey=null;
     
 	public function __construct(){
-		$this->sessionKey = 'Cfmessages';
+		$this->sessionKey = 'Cfmessage';
 	}
 
     
