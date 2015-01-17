@@ -9,6 +9,8 @@ namespace Erogami\Cfmessage;
 
 class Cfmessage{
     
+    
+    
     public $sessionKey=null;
     
 	public function __construct(){
@@ -25,7 +27,7 @@ class Cfmessage{
      * @return void 
      */ 
     public function addMessage($type, $content) {
-        if(!($this->session->get($this->sessionKey))
+        if(!($this->session->get($this->sessionKey)))
         {
             $messages = $this->session->get($this->sessionKey);
         }
