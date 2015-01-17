@@ -16,7 +16,7 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase{
         
         $_SESSION['Cfmessage'] = $messages;
         
-        $test->addMessage('test', 'info');
+        $test->addMessage('info', 'test');
         
         $exp = '<div id="message" class="info"><p>test</p></div><div id="message" class="info"><p>test</p></div>';
 	
